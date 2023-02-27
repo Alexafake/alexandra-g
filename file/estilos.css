@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+ /* este es un identificador el cual afecta a todo nuestro documento */
+}
+header{
+  background-color: #718355;
+  /* el background-color da un tono de color para nuestro lienzo o pagina  */
+  text-align:center;
+  /* es un atributo el cual centra el texto o lo posiciona en un lugar especifico  */
+  margin: 100px;
+  /* da las margenes que va a tener nuestro identifcador  */
+  font-size: 25px;
+  /* da un tamaño de letra o (fuente) */
+  align-items: center;
+  /* este atributo alinea o posiciona elemnetos segun nuestro acomodo  */
+}
+
+body{
+  /* este es el identificador body el cual los atributos que demos
+  afectaran a nuestro fon lienzo y demas que agreguemos */
+  background-image: url("../file/2.jfif");
+  /* este atributo seleciona una imagen de fondo  */
+  background-repeat: no-repeat;
+  /* este tributo no deja repetir la imagen si esta se duplica por si  su dimension no sea compatible  */
+  background-size: cover;
+  /* hace que se rellene la or completo con el cover */
+  margin-left: 8%;
+  /* da el margen especifico a la izquierda */
+  margin-right: 8%;
+  /* da margen especifico a la darecha */
+}
+
+.contenedor {
+  width: 75%;
+  margin: auto;
+}
+
+p{
+  font-size: 30px;
+  color:rgb(5, 5, 5);
+  /* da color a la letra del parrafo */
+  
+}
+h2{
+  /* este identificador afecta el subtitulo */
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* define la fuente del texto  */
+color: #6f662e;
+font-size: 30px;
+}
+.tp{
+  text-align: center;
+  font-size: 20px;
+  color: #677353;
+}
+.jum{
+    display: flex;
+    /* muestra en forma horizontal el contenido de el identificador */
+    justify-content: center;
+  }
+  
+.omega{
+  display: flex;
+  justify-content: center;
+  /* justifica el contenido y lo parametriza segun la necesidad */
+  height: 250px ;
+ 
+
+  }
+  .mx{
+    display: flex;
+    justify-content: center;
+    height: 250px ;
+    /* le da un ancho a nuestro identificador  */
+    }
+
+    .txt{
+      display: flex;
+      justify-content: center;
+      height: 250px ;
+      }
+     
+      .slider{ 
+        width: 100%;
+        height: 400px;
+        margin-left: 25%;
+        overflow: hidden;
+        /* para poder realizar un scroll sin importar el tamaño de su px */
+        margin-top: 2rem;
+      }
+      .slider ul{
+          display: flex;
+          animation: cambio 8s infinite alternate linear;
+          /* realiza una animacion de cambio el cual va alternando en
+           este caso cada 8 segundos */
+          width: 400%;
+      }
+      .slider li{
+          width: 30%;
+          list-style: none;
+          /* quita el estilo de la lista dejandolo solo el texto  */
+      }
+      .slider img{
+          width: 50%;
+          height: 65%;
+         
+      }
+      @keyframes cambio{
+        /* aqui hace el cambio y redimensiona los margenes de las imagenes que estan en el slider  */
+          0%{margin-left: 0;}
+          20%{margin-left: 0;}
+          
+          25%{margin-left: -100%;}
+          45%{margin-left: -100%;}
+          
+          50%{margin-left: -200%;}
+          70%{margin-left: -200%;}
+          
+          75%{margin-left: -300%;}
+          100%{margin-left: -300%;}
+      }
